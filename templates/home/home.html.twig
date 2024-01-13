@@ -1,0 +1,429 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Aïssata - Accueil{% endblock %}
+
+{% block stylesheets %}{% endblock %}
+
+{% block css %}<link rel="stylesheet" type="text/css" href="{{ asset('css/home/home.css') }}">{% endblock %}
+
+	
+{% block body %}
+<div class="home-container">
+
+    <!--------------------------------------------------------------------------------
+                                    Partie attérissage, phrase d'accroche
+    ---------------------------------------------------------------------------------->
+
+    <div class="home-hero">
+        <div class="home-container01">
+        <div class="home-card">
+            <h1 class="home-text">Avec T.A.D - Ton Aide Digitale :</h1>
+            <h1 class="home-text01">Transformez votre présence digitale</h1>
+            <span class="home-text02 Lead">
+            <span>
+                Création de sites web percutants, logos et branding à votre image, gestion SEO pour vous démarquer en ligne.
+            </span>
+            <span>
+                Choisissez le meilleur pour votre entreprise !
+            </span>
+            </span>
+            <div class="home-container02">
+                <div class="home-container03">
+                    <div class="primary-pink-button-container">
+                    <button class="primary-pink-button-button button ButtonSmall">
+                        <span>contacter T.A.D<span>
+                    </button>
+                    </div>
+                </div>
+                <!-- <div class="outline-gray-button-container">
+                    <button class="outline-gray-button-button button ButtonSmall">
+                    <span>read more</span>
+                    </button>
+                </div> -->
+            </div>
+            <div class="home-container04">
+            <!-- <img
+                alt="image"
+                src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-pinterest.svg"
+                class="home-image"
+            /> -->
+            <!-- <img
+                alt="image"
+                src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-netflix.svg"
+                class="home-image01"
+            /> -->
+            <!-- <img
+                alt="image"
+                src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-coinbase.svg"
+                class="home-image02"
+            /> -->
+            <!-- <img
+                alt="image"
+                src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-nasa.svg"
+                class="home-image03"
+            /> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <img alt="image" src="{{ asset('images/curved6-1500h.jpg') }}" class="home-image04" />
+
+    <!--------------------------------------------------------------------------------
+                                    Partie compétences
+    ---------------------------------------------------------------------------------->
+    <section class="home-features">
+          <div class="feature-card-container">
+            <img alt="image" src="{{ asset('images/cube1.svg') }}" class="feature-card-image" />
+            <h5 class="feature-card-text HeadingThree"><span>Design</span></h5>
+            <span class="feature-card-text1">
+              <span>Choose the best design system for your next product.</span>
+            </span>
+          </div>
+          <div class="feature-card-container">
+            <img alt="image" src="{{ asset('images/person1.svg') }}" class="feature-card-image" />
+            <h5 class="feature-card-text HeadingThree"><span>Design</span></h5>
+            <span class="feature-card-text1">
+              <span>Get the latest design ideas and turn it into reality.</span>
+            </span>
+          </div>
+          <div class="feature-card-container">
+            <img alt="image" src="{{ asset('images/rocket1.svg') }}" class="feature-card-image" />
+            <h5 class="feature-card-text HeadingThree"><span>Design</span></h5>
+            <span class="feature-card-text1">
+              <span>Make your code easier to maintain using variables.</span>
+            </span>
+          </div>
+          <div class="feature-card-container">
+            <img alt="image" src="{{ asset('images/credit%20card1.svg') }}" class="feature-card-image" />
+            <h5 class="feature-card-text HeadingThree"><span>Design</span></h5>
+            <span class="feature-card-text1">
+              <span>This design system is fully supported on any device.</span>
+            </span>
+          </div>
+        </section>
+
+    <!--------------------------------------------------------------------------------
+                                    Partie mon travail
+    ---------------------------------------------------------------------------------->
+    <div class="home-featured">
+        <div class="home-header1">
+            <h2 class="heading">Mon travail</h2>
+            <div class="home-link">
+                <div class="link">
+                    <span class="link-caption"><a href="{{ asset('/') }}">Tous les projets</a></span>
+                    {# <svg viewBox="0 0 1024 1024" class="link-icon">
+                        <path d="M298.667 341.333h323669l-353 835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                    </svg> #}
+                </div>
+            </div>
+        </div>
+        <div class="home-list">
+            <div class="work-work">
+                <img alt="image" src="{{ asset('images/Ostaj.png') }}" class="work-image" />
+                <div class="work-details">
+                    <div class="work-header">
+                        <div class="work-heading">
+                            <span class="work-text"><span>On S'Tient Au Jus</span></span>
+                            <div class="link">
+                                <span class="link-caption">
+                                    <a href="https:/ostaj.fr" target="_blank">Aller sur le site</a>
+                                </span>
+                                {# <svg viewBox="0 0 1024 1024" class="link-icon">
+                                    <path d="M298 667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                                </svg> #}
+                            </div>
+                        </div>
+                        <span class="work-text1">
+                            <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt.
+                            </span>
+                        </span>
+                    </div>
+                    <div class="work-tags">
+                        <div class="tag-container">
+                            <span class="tag-tag tag"><span>Logo</span></span>
+                        </div>
+                        <div class="tag-container">
+                            <span class="tag-tag tag"><span>Strategy</span></span>
+                        </div>
+                        <div class="tag-container">
+                            <span class="tag-tag tag">
+                                <span>Développement full stack</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-work">
+                <img alt="image" src="{{ asset('images/work_2-1500w.png') }}" class="work-image" />
+                <div class="work-details">
+                    <div class="work-header">
+                        <div class="work-heading">
+                            <span class="work-text"><span>ZENG</span></span>
+                            <div class="link">
+                                <span class="link-caption">
+                                    <a href="{{ asset('/') }}">View case study</a>
+                                </span>
+                                {# <svg viewBox="0 0 1024 1024" class="link-icon">
+                                    <path d="M298 667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
+                                </svg> #}
+                            </div>
+                        </div>
+                        <span class="work-text1">
+                            <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt.
+                            </span>
+                        </span>
+                    </div>
+                    <div class="work-tags">
+                        <div class="tag-container">
+                            <span class="tag-tag tag"><span>Branding</span></span>
+                        </div>
+                        <div class="tag-container">
+                            <span class="tag-tag tag"><span>Strategy</span></span>
+                        </div>
+                        <div class="tag-container">
+                            <span class="tag-tag tag">
+                                <span>Web Development</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-work">
+                <img alt="image" src="{{ asset('images/work_3-1500w.png') }}" class="work-image" />
+                <div class="work-details">
+                    <div class="work-header">
+                        <div class="work-heading">
+                            <span class="work-text"><span>YORGU</span></span>
+                            <div class="link">
+                                <span class="link-caption">
+                                    <a href="{{ asset('/') }}">View case study</a>
+                                </span>
+                            </div>
+                        </div>
+                        <span class="work-text1">
+                            <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt.
+                            </span>
+                        </span>
+                    </div>
+                    <div class="work-tags">
+                        <div class="tag-container">
+                            <span class="tag-tag tag"><span>Branding</span></span>
+                        </div>
+                        <div class="tag-container">
+                            <span class="tag-tag tag"><span>Strategy</span></span>
+                        </div>
+                        <div class="tag-container">
+                            <span class="tag-tag tag">
+                                <span>Web Development</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+
+<!--------------------------------------------------------------------------------
+            Partie avec le fond rose, je ne sais pas encore quoi y mettre
+---------------------------------------------------------------------------------->
+<section class="home-testimonials">
+    <div class="home-container12">
+        <div class="home-container13">
+            <div class="home-container14">
+            <h2 class="home-text23 HeadingOne">Travaillez avec nous</h2>
+            <p class="home-text24 Lead">
+                <span class="home-text25">
+                Quoi que vous imaginiez - we got you !
+                </span>
+            </p>
+            <p class="home-text26 Body">
+                <span class="home-text27">
+                "Take up one idea. Make that one idea your life - think of
+                it, dream of it, live on that idea. Let the brain, muscles,
+                nerves, every part of your body, be full of that idea, and
+                just leave every other idea alone. This is the way to
+                success. A single rose can be my garden... a single friend,
+                my world."
+                </span>
+            </p>
+            <p class="home-text28">Mark Jojansen</p>
+            <p class="home-text29 Small">Project manager, Atlassian</p>
+            <div class="home-container15">
+                <img alt="image" src="{{ asset('images/team-4-200h.jpg') }}" class="home-image08"/>
+                <div class="home-container16"></div>
+                <img alt="image" src="{{ asset('images/team-3-200h.jpg') }}" class="home-image09"/>
+                <div class="home-container17"></div>
+                <img alt="image" src="{{ asset('images/team-2-200h.jpg') }}" class="home-image10"/>
+            </div>
+            </div>
+        </div>
+        <div class="home-logos">
+            <div class="home-container18">
+            <div class="home-container19">
+                <div class="home-container20">
+                    <img alt="image" src="{{ asset('images/logo-asana.svg') }}" class="home-image11"/>
+                </div>
+                <div class="home-container21">
+                    <img alt="image" src="{{ asset('images/logo-slack.svg') }}" class="home-image12"/>
+                </div>
+                <div class="home-container22">
+                    <img alt="image" src="{{ asset('images/logo-google-drive.svg') }}" class="home-image13"/>
+                </div>
+            </div>
+            <div class="home-container23">
+                <div class="home-container24">
+                    <img alt="image" src="{{ asset('images/logo-shopify.svg') }}" class="home-image14"/>
+                </div>
+                <div class="home-container25">
+                    <img alt="image" src="{{ asset('https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/small-logos/logo-apple.svg') }}" class="home-image15"/>
+                </div>
+                <div class="home-container26">
+                    <img alt="image" src="{{ asset('images/logo-invision.svg') }}" class="home-image16"/>
+                </div>
+            </div>
+            <div class="home-container27">
+                <div class="home-container28">
+                    <img alt="image" src="{{ asset('images/logo-attlasian.svg') }}" class="home-image17"/>
+                </div>
+                <div class="home-container29">
+                    <img alt="image" src="{{ asset('images/logo-weave.svg') }}" class="home-image18"/>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <img alt="image" src="{{ asset('images/bottom.svg') }}" class="home-bottom-wave-image"/>
+    <img alt="image" src="{{ asset('images/waves-white.svg') }}" class="home-image19"/>
+    <img alt="image" src="{{ asset('images/top.svg') }}" class="home-top-wave-image"/>
+</section>
+
+
+<!--------------------------------------------------------------------------------
+                                Partie FAQ
+---------------------------------------------------------------------------------->
+
+<div class="home-faq container">
+    <div class="home-faq-container">
+    <div class="home-faq1">
+        <div class="home-container30">
+        <span class="home-text40 sectionTitleFaq">
+            <span>FAQ</span>
+            <br />
+        </span>
+        <h2 class="home-text43 heading2">Questions courantes</h2>
+        <span class="home-text44">
+            <span>
+            Voici quelques-unes des questions les plus courantes que nous recevons
+            </span>
+            <br />
+            <span>
+            <span>
+                <span></span>
+                <span></span>
+            </span>
+            <span>
+                <span></span>
+                <span></span>
+            </span>
+            </span>
+            <span>
+            <span>
+                <span></span>
+                <span></span>
+            </span>
+            <span>
+                <span></span>
+                <span></span>
+            </span>
+            </span>
+        </span>
+        </div>
+        <div class="home-container31">
+        <div class="question-container">
+            <span class="question-text heading4">
+            <span>Quels services proposes-tu ?</span>
+            </span>
+            <span class="question-text1">
+            <span>
+                J'offre bien plus qu'une simple création de site web.
+                Mon expertise comprend l'amélioration de ton contenu marketing
+                et de ton référencement pour propulser ta visibilité en ligne,
+                ainsi que la création de logos percutants et d'éléments visuels qui captivent l'attention de tes utilisateurs.
+            </span>
+            </span>
+        </div>
+        <div class="question-container">
+            <span class="question-text heading4">
+            <span>
+                Quels sont les avantages d'avoir un site web professionnel ?
+            </span>
+            </span>
+            <span class="question-text1">
+            <span>
+                Un site web professionnel est bien plus qu'une simple vitrine en ligne.
+                C'est une carte de visite virtuelle qui renforce ta crédibilité
+                et établit une confiance solide avec tes futurs clients.
+                Il représente une opportunité inestimable pour promouvoir tes produits ou services
+                et toucher un public plus vaste.
+            </span>
+            </span>
+        </div>
+        <div class="question-container">
+            <span class="question-text heading4">
+            <span>
+                Combien de temps te faut-il pour créer un site web professionnel ?
+            </span>
+            </span>
+            <span class="question-text1">
+            <span>
+                Chaque projet est unique, mais rassure-toi,
+                mon équipe et moi on s'engage à collaborer étroitement avec toi pour comprendre tes besoins spécifiques
+                et te fournir un calendrier précis pour le développement de ton site.
+            </span>
+            </span>
+        </div>
+        <div class="question-container">
+            <span class="question-text heading4">
+            <span>
+                Peux-tu aider en matière de référencement (SEO) ?
+            </span>
+            </span>
+            <span class="question-text1">
+            <span>
+                Absolument ! Mon équipe et moi sommes spécialisés
+                dans l'amélioration du contenu marketing et du référencement
+                pour te garantir une présence en ligne optimale.
+            </span>
+            </span>
+        </div>
+        <div class="question-container">
+            <span class="question-text heading4">
+            <span>
+                Peux- aider en matière de référencement (SEO) ?
+            </span>
+            </span>
+            <span class="question-text1">
+            <span>
+                The time it takes to build a dynamic professional website
+                can vary depending on the complexity of the project. Our
+                team will work closely with you to understand your
+                requirements and provide an estimated timeline for the
+                development process.
+            </span>
+            </span>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
