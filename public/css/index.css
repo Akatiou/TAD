@@ -96,7 +96,7 @@
 
 .Small {
     font-size: 0.875rem;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-weight: 400;
     line-height: 1.5;
     text-transform: none;
@@ -105,7 +105,7 @@
 
 .Large {
     font-size: 0.875rem;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-weight: 400;
     letter-spacing: -0.025rem;
     text-transform: none;
@@ -114,7 +114,7 @@
 
 .Medium {
     font-size: 1.125rem;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-weight: 400;
     line-height: 1.625;
     text-transform: none;
@@ -123,7 +123,7 @@
 
 .Body {
     font-size: 1rem;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-weight: 400;
     line-height: 1.625;
     text-transform: none;
@@ -132,7 +132,7 @@
 
 .HeadingOne {
     font-size: 2.25rem;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-weight: 700;
     line-height: 1.3;
     text-transform: none;
@@ -141,7 +141,7 @@
 
 .HeadingTwo {
     font-size: 1.875rem;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-weight: 700;
     line-height: 1.375;
     text-transform: none;
@@ -150,7 +150,7 @@
 
 .Lead {
     font-size: 1.25rem;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-weight: 400;
     line-height: 1.625;
     text-transform: none;
@@ -159,7 +159,7 @@
 
 .HeadingThree {
     font-size: 1.25rem;
-    font-family: Open Sans;
+    /* font-family: Open Sans; */
     font-weight: 600;
     line-height: 1.375;
     text-transform: none;

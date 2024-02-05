@@ -7,6 +7,10 @@
         T.A.D - Ton Aide Digital
       {% endblock %}
     </title>
+    
+    <!-- Logo en miniature sur l'onglet -->
+		<link rel="icon" href="{{ asset('images/LogoSite1.png') }}" type="image/png" sizes="16x16">
+
     <!-- Google font  -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -15,11 +19,6 @@
 		<!-- Link Bootstrap (Js/JQuery) -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>{% block javascripts %}{% endblock %}
-
-		{# <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> #}
-
-		<link rel="icon" href="{{ asset('images/LogoSite1.png') }}" type="image/png" sizes="16x16">
 
 		<!-- Link Bootstrap (CSS) -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -50,24 +49,31 @@
                 <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Accueil</a>
+                      <a class="nav-link" aria-current="page" href="{{ asset('/') }}">Accueil</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Compétences</a>
+                      <a class="nav-link" href="#home-competences">Compétences</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Travail</a>
+                      <a class="nav-link" href="#home-myWork">Travail</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Témoignages</a>
+                      <a class="nav-link" href="#home-temoignages">Témoignages</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">F.A.Q</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#home-FAQ">F.A.Q</a>
                     </li>
                   </ul>
+                  <div id="bouton_contact_hamb"> 
+                   <button class="header-primary-pink-button-button button ButtonSmall ">
+                    <span><a href="#home-contact">Démarrer un projet</a></span>
+                  </button> 
+                 </div>
+                </div>
+                <div id="bouton_contact_header">
+                  <button class="header-primary-pink-button-button button ButtonSmall">
+                    <span><a href="#home-contact">Démarrer un projet</a></span>
+                  </button>
                 </div>
               {# </div> #}
             </div>
@@ -91,23 +97,23 @@
             </div>
             <div class="footer-container2">
               <div class="footer-container3">
-                <span class="footer-text02 Large">Company</span>
-                <span class="footer-text03 Large">About Us</span>
-                <span class="footer-text04 Large">Careers</span>
-                <span class="footer-text05 Large">Press</span>
+                <span class="footer-text02 Large">Menu</span>
+                <span class="footer-text03 Large">Accueil</span>
+                <span class="footer-text04 Large">Compétences</span>
+                <span class="footer-text05 Large">Travail</span>
               </div>
               <div class="footer-container4">
-                <span class="footer-text06 Large">Pages</span>
-                <span class="footer-text07 Large">Login</span>
-                <span class="footer-text08 Large">Register</span>
-                <span class="footer-text09 Large">About</span>
+                <!-- <span class="footer-text06 Large">Pages</span> -->
+                <span class="footer-text07 Large">Témoignages</span>
+                <span class="footer-text08 Large">F.A.Q</span>
+                <span class="footer-text09 Large">Contact</span>
               </div>
-              <div class="footer-container5">
+              <!-- <div class="footer-container5">
                 <span class="footer-text10 Large">Products</span>
                 <span class="footer-text11 Large">Free</span>
                 <span class="footer-text12 Large">PRO</span>
                 <span class="footer-text13 Large">Latest</span>
-              </div>
+              </div> -->
             </div>
           </div>
           <img alt="image" src="{{ asset('images/waves-white.svg') }}" class="footer-image"/>
